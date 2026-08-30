@@ -1,3 +1,4 @@
+
 # import flask libraries
 
 from flask import Flask, request, jsonify
@@ -14,7 +15,7 @@ trained_model = joblib.load("backend/best_random_forest_model.joblib")
 
 #Define route for home page (GET request)
 
-@Learner_predictor_api.route("/")
+@Learner_predictor_api.get("/")
 def home():
       return "Welcome to Learner Predictor API"
 
