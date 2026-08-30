@@ -10,7 +10,7 @@ Learner_predictor_api = Flask("Learner Predictor")
 
 # Load the trained model
 
-trained_model = joblib.load("backend_files/best_random_forest_model.joblib")
+trained_model = joblib.load("backend/best_random_forest_model.joblib")
 
 #Define route for home page (GET request)
 
